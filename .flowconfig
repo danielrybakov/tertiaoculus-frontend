@@ -1,0 +1,25 @@
+[ignore]
+<PROJECT_ROOT>/config-overrides.js
+<PROJECT_ROOT>/public/.*
+<PROJECT_ROOT>/scripts/.*
+<PROJECT_ROOT>/build/.*              
+.*/node_modules/.*
+<PROJECT_ROOT>/coverage/.*
+.*\.ignore\.js
+
+[libs]
+flow-typed
+
+[lints]
+
+[options]
+all=true
+module.name_mapper='^app\(.*\)$' -> '<PROJECT_ROOT>/src/app/\1'
+module.name_mapper='^assets\(.*\)$' -> '<PROJECT_ROOT>/src/assets/\1'
+module.name_mapper='^i18n\(.*\)$' -> '<PROJECT_ROOT>/src/i18n/\1'
+module.name_mapper='^store\(.*\)$' -> '<PROJECT_ROOT>/src/store/\1'
+module.name_mapper='^types\(.*\)$' -> '<PROJECT_ROOT>/src/types/\1'
+
+[strict]
+[version]
+^0.89.0
