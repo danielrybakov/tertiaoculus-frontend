@@ -1,5 +1,6 @@
 import React from 'react'
 import { injectIntl } from 'react-intl'
+import { Layout } from 'app/common/layout'
 
 type Props = {
     intl: any
@@ -7,7 +8,11 @@ type Props = {
 
 const ContactComponent = (props: Props) => {
     //const { intl } = props
-    return <div>CONTACT</div>
+    return (
+        <Layout>
+            <div>CONTACT</div>
+        </Layout>
+    )
 }
 
 const Contact = injectIntl(ContactComponent)

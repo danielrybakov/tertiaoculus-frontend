@@ -1,5 +1,6 @@
 import React from 'react'
 import { injectIntl } from 'react-intl'
+import { Layout } from 'app/common/layout'
 
 type Props = {
     intl: any
@@ -7,7 +8,11 @@ type Props = {
 
 const Posts = (props: Props) => {
     //const { intl } = props
-    return <div>POSTS</div>
+    return (
+        <Layout>
+            <div>POSTS</div>
+        </Layout>
+    )
 }
 
 const PostsComponent = injectIntl(Posts)
