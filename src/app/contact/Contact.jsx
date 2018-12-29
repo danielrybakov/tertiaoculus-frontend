@@ -1,7 +1,7 @@
 import React from 'react'
 import { injectIntl } from 'react-intl'
 import { Layout } from 'app/common/layout'
-import {SmallText} from 'app/common/typography'
+import { SmallText } from 'app/common/typography'
 
 type Props = {
     intl: any

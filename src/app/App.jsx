@@ -12,7 +12,6 @@ type Props = {
 }
 
 class AppComponent extends Component<Props> {
-
     render() {
         const { intl } = this.props
         return (

@@ -3,7 +3,8 @@ const en = {
     messages: {
         'routes.home': '/',
         'routes.posts': '/posts',
-        'routes.contact': '/contact'
+        'routes.contact': '/contact',
+        'button.add.label': 'Take a picture'
     }
 }
 export { en }
