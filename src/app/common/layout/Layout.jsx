@@ -1,5 +1,5 @@
 import type { Element } from 'react'
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Camera, Contact, Home, Logo } from 'app/common/icons'
 import styled from 'styled-components'
 import { colors } from 'app/common/styles'
@@ -25,7 +25,7 @@ const LayoutComponent = (props: Props) => {
     const routeContact = intl.formatMessage({ id: 'routes.contact' })
     console.log(pathname)
     return (
-        <div>
+        <Fragment>
             <Header>
                 <Logo />
             </Header>
@@ -45,7 +45,7 @@ const LayoutComponent = (props: Props) => {
                     />
                 </TabButton>
             </Footer>
-        </div>
+        </Fragment>
     )
 }
 

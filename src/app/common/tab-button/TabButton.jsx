@@ -1,7 +1,6 @@
 import type { Element } from 'react'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import styled from 'styled-components'
 
 type Props = {
     route: string,
@@ -18,8 +17,3 @@ const TabButton = (props: Props) => {
 }
 
 export { TabButton }
-
-const StyledNavLink = styled(NavLink)`
-    &.active {
-    }
-`
