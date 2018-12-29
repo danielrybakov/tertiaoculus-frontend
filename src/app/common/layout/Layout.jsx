@@ -23,7 +23,6 @@ const LayoutComponent = (props: Props) => {
     const routeHome = intl.formatMessage({ id: 'routes.home' })
     const routePosts = intl.formatMessage({ id: 'routes.posts' })
     const routeContact = intl.formatMessage({ id: 'routes.contact' })
-    console.log(pathname)
     return (
         <Fragment>
             <Header>

@@ -12,9 +12,6 @@ type Props = {
 }
 
 class AppComponent extends Component<Props> {
-    componentDidMount() {
-        console.log('did mount')
-    }
 
     render() {
         const { intl } = this.props
