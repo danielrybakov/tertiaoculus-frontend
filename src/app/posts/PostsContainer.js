@@ -15,7 +15,7 @@ const mapDispatchToProps = (d: Dispatch<any>) => ({
 })
 
 const Posts = connect(
-    null,
+    mapStateToProps,
     mapDispatchToProps
 )(PostsComponent)
 

@@ -6,7 +6,7 @@ type Props = {
 }
 
 const HomeComponent = (props: Props) => {
-    const { intl } = props
+    //const { intl } = props
     return <div>HOME</div>
 }
 

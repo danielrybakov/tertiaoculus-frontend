@@ -6,7 +6,7 @@ type Props = {
 }
 
 const ContactComponent = (props: Props) => {
-    const { intl } = props
+    //const { intl } = props
     return <div>CONTACT</div>
 }
 

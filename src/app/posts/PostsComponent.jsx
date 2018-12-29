@@ -6,7 +6,7 @@ type Props = {
 }
 
 const Posts = (props: Props) => {
-    const { intl } = props
+    //const { intl } = props
     return <div>POSTS</div>
 }
 
