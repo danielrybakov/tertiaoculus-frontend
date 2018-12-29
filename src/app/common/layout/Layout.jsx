@@ -28,7 +28,10 @@ const LayoutComponent = (props: Props) => {
             <Header>
                 <Logo />
             </Header>
+            <Container>
+
             {children}
+            </Container>
             <Footer>
                 <TabButton route={routeHome}>
                     <Home color={pathname === routeHome ? 'black' : green2} />
@@ -51,6 +54,12 @@ const LayoutComponent = (props: Props) => {
 const Layout = injectIntl(withRouter(LayoutComponent))
 
 export { Layout }
+
+const Container = styled.div`
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 40px);
+`
 
 const Header = styled.header`
     background-color: ${green1};
