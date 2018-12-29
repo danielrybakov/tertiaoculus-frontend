@@ -1,7 +1,7 @@
 const fr = {
     locale: 'fr',
     messages: {
-        'routes.home': '/home',
+        'routes.home': '/',
         'routes.posts': '/posts',
         'routes.contact': '/contact'
     }
