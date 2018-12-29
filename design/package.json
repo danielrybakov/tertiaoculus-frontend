@@ -1,0 +1,19 @@
+{
+    "private": true,
+    "name": "design",
+    "version": "0.1.0",
+    "description": "UI resources folder for BK",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "ecocea",
+    "license": "ISC",
+    "devDependencies": {
+        "svgo": "^1.0.5",
+        "svgr": "^1.10.0"
+    },
+    "scripts": {
+        "icons": "rm -rf ./build && mkdir -p ./build/svgo && svgo -f ./export/icons -o ./build/svgo --pretty --enable=prefixIds && pushd ./build/svgo && svgr -d ../../build/components * --jsx-bracket-same-line --no-expand-props --ids"
+    }
+}
